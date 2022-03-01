@@ -9,6 +9,7 @@
  */
 public class HomeScreen {
     public static void main(String[] args) {
+        // Idea for a start
         System.out.println("Cash$tream");
         System.out.println("Username");
         System.out.println("Password");
