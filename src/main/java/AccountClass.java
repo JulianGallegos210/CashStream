@@ -18,9 +18,15 @@ public class AccountClass {
     private double checkingBalance;
     
     double deposit(double ammount){
-        return ammount+savingBalance;
+        return ammount+checkingBalance;
     }
     double withdraw(double ammount){
         return checkingBalance-ammount;
+    }
+    double getSavingBalance(){
+        return savingBalance;
+    }
+    double getCheckingBalance(){
+        return checkingBalance;
     }
 }
