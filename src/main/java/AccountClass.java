@@ -8,12 +8,19 @@
  * @author Gallegos
  */
 public class AccountClass {
-    String firstName;
-    String lastName;
-    String username;
-    String password;
-    int actNumber;
-    int routeNumber;
-    double savingBalance;
-    double checkingBalance;
+    private String firstName;
+    private String lastName;
+    private String username;
+    private String password;
+    private int actNumber;
+    private int routeNumber;
+    private double savingBalance;
+    private double checkingBalance;
+    
+    double deposit(double ammount){
+        return ammount+savingBalance;
+    }
+    double withdraw(double ammount){
+        return checkingBalance-ammount;
+    }
 }
