@@ -30,12 +30,18 @@ public class Account {
         Scanner scn = new Scanner(System.in);
         System.out.println("Type 1 to deposit into your checking,2 to deposit into your savings, and 3 if you would like to cancel: ");
         int x= scn.nextInt();
-        if(x==1){
-            checkingBalance += ammount;
-        }else if(x==2){
-            savingBalance += ammount;
-        }else{
-            System.out.println("No money was added to your account.");
+        switch (x) {
+            case 1:
+                checkingBalance += ammount;
+                System.out.println("Your new Checking balance is now "+checkingBalance);
+                break;
+            case 2:
+                savingBalance += ammount;
+                System.out.println("Your new Saving balance is now "+savingBalance);
+                break;
+            default:
+                System.out.println("No money was added to your account.");
+                break;
         }
         
     }
@@ -43,12 +49,18 @@ public class Account {
         Scanner scn = new Scanner(System.in);
         System.out.println("Type 1 to withdraw from your checking,2 to withdraw your savings, and 3 if you would like to cancel: ");
         int x= scn.nextInt();
-        if(x==1){
-            checkingBalance -= ammount;
-        }else if(x==2){
-            savingBalance -= ammount;
-        }else{
-            System.out.println("No money was taken from your account.");
+        switch (x) {
+            case 1:
+                checkingBalance -= ammount;
+                System.out.println("Your new Checking balance is now "+checkingBalance);
+                break;
+            case 2:
+                savingBalance -= ammount;
+                System.out.println("Your new Saving balance is now "+savingBalance);
+                break;
+            default:
+                System.out.println("No money was taken from your account.");
+                break;
         }
         
     }
