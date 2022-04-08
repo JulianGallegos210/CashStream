@@ -26,6 +26,9 @@ public class Account {
         this.username = username;
         this.password = password;
     }
+    public void sendMoney(double ammount){
+        
+    }
     public void deposit(double ammount){
         Scanner scn = new Scanner(System.in);
         System.out.println("Type 1 to deposit into your checking,2 to deposit into your savings, and 3 if you would like to cancel: ");
